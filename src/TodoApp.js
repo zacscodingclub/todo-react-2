@@ -10,6 +10,8 @@ class TodoApp extends Component {
     this.state = {
       items: []
     }
+
+    this.updateItems = this.updateItems.bind(this);
   }
 
   updateItems(newItem) {
@@ -21,10 +23,10 @@ class TodoApp extends Component {
     return (
       <div>
         <TodoBanner />
-        <TodoList />
+        <TodoList items={this.state.items} />
         <TodoForm onFormSubmit={this.updateItems} />
       </div>
-    )
+    );
   }
 }
 

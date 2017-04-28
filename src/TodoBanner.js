@@ -4,7 +4,7 @@ class TodoBanner extends Component {
   render() {
     return (
       <h3>TODO</h3>
-    )
+    );
   }
 }
 
